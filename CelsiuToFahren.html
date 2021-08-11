@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Celcius to Fahrenheit
+        </title>
+    </head>
+    <body>
+        <h1>Convert Celcius to Fahrenheit</h1>
+        <script type="text/javascript">
+        function conv() {
+            var cel=document.getElementById("text1").value;
+            var f=(cel*9/5)+32;
+            document.getElementById("text2").value=f;
+
+        }
+        </script>
+
+
+
+
+        <form>Enter temperature in Celcius
+            <input type="text" id="text1">
+            <input type="button" id="b1" value="CONVERT" onclick="conv()">
+            <br><br>Fahrenheit<input type="text" id="text2">
+
+        </form>
+    </body>
+</html>

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>CalculateDAY</title>
+</head>
+<body><h1>Calculate day of any date :</h1><br><br><br>
+    <script type="text/javascript">document.bgColor="skyblue";
+    
+
+    function calculate(d,m,y,y1,y2,y3,ans2,ans) {
+        var bday=document.getElementById("text1").value;
+       
+        var d=bday[0]+bday[1]; var m=bday[3]+bday[4]; var y1=bday[6]+bday[7];var y2=bday[8]+bday[9];
+        d=parseInt(d);
+        
+        y1=parseInt(y1);
+        y2=parseInt(y2);
+
+//        console.log(y1+y2)
+       switch (m) {
+           case '01':
+               m=11;
+               break;
+
+               case '02':
+               m=12;
+               break;
+
+               case '03':
+               m=1;
+               break;
+
+               case '04':
+               m=2;
+               break;
+
+               case '05':
+               m=3;
+               break;
+
+               case '06':
+               m=4;
+               break;
+
+               case '07':
+               m=5;
+               break;
+
+               case '08':
+               m=6;
+               break;
+
+               case '09':
+               m=7;
+               break;
+
+               case '10':
+               m=8;
+               break;
+
+               case '11':
+               m=9;
+               break;
+
+               case '12':
+               m=10;
+               break;
+               default :
+               m='month';
+       }
+    //    console.log(m)
+          
+       ans0=(13*m)-1;
+       console.log(ans0)
+       ans1=(ans0/5)+d;
+       console.log(ans1)
+       ans2=ans1+y2+ (y2/4) +(y1/4)-(2*y1);
+       ans2=Math.round(ans2)-2;
+       console.log(ans2); 
+       
+
+       /*d+ 
+       [(13*m-1)/5] +y2+ [y2/4] +[y1/4]-(2*y1);
+       k is  the day of the month.
+m is the month number.
+D is the last two digits of the year.
+C is the first two digits of the year.*/
+    //    console.log(ans2)
+       var ans=ans2%7;
+      
+       console.log(ans)
+
+       switch (ans) {
+           case 6:
+            ans="sa";
+               break;
+
+           case 0:
+            ans="sun";
+               break;
+
+           case 1:
+            ans="mon";
+               break;
+
+           case 2:
+            ans="tue";
+               break;
+           case 3:
+            ans="wed";
+               break;
+
+           case 4:
+            ans="th";
+               break; 
+
+           case 5:
+            ans="fri";
+               break;
+           default:
+            ans="d";
+       }
+
+  
+
+    document.getElementById("text2").value=ans;
+
+        
+    
+    }
+    
+
+    </script>
+    <form><br><br>
+        <h3>Enter birthday in "dd/mm/yyyy" format :</h3>
+        
+        <input type="text" id="text1" size="20">
+        <input type="button" value="Calculate" onclick="calculate()">
+        <br><br><br><br>Day is
+        <input type="text" id="text2" label="Day">
+
+    </form>
+
+</body>
+</html>

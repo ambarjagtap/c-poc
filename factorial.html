@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>FACTORIAL</title>
+    </head>
+    <body>
+     <h1><center>FACTORISE ANY NUMBER </center></h1>
+     <br><br>
+     Enter number to factorise !
+     <input type="text" id="text1">
+     <button id="bu1" onclick="fact_n()">FACTORISE
+    </button><br>
+    <input type="text" id="text2">
+    <script type="text/javascript">
+    function fact_n() {
+        var result=1;
+        var n=document.getElementById("text1").value;
+       for (let i = 1; i<=n;i++) {
+           result = result*i;
+           document.getElementById("text2").value=result; 
+          
+           
+       }
+      
+    }
+
+    </script>
+   
+
+    </body>
+</html>

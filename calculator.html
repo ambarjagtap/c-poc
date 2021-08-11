@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head><title>calculator</title>
+    <style>
+        body {background-color: lightcoral;}
+        h3{
+            font-size: 40px;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+            color: olivedrab;
+            text-align: center;
+            text-shadow: peru;
+            text-decoration: powderblue;
+            cursor: grab;
+        }
+        p{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-style: normal;
+            font-size: 30px;
+        }
+        form{
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-style: normal;
+
+            font-size: 30px;
+        }
+
+    </style>
+    
+    
+    
+    
+    
+    
+    
+    </head><h3>Calculator</h3>
+<body>
+     <script type="text/javascript">document.bgColor="yellow";
+     
+     function mult(p1,p2) {
+         var p1=document.getElementById("firstno").value;
+         var p2=document.getElementById("secondno").value;
+         document.getElementById("answe").value=p1*p2;
+
+     }
+
+     function divi(p1,p2) {
+         var p1=document.getElementById("firstno").value;
+         var p2=document.getElementById("secondno").value;
+         document.getElementById("answe").value=parseFloat(p1/p2);       
+     }
+
+     function addi(p1,p2) {
+         var p1=document.getElementById("firstno").value;
+         var p2=document.getElementById("secondno").value;
+                  
+    
+         document.getElementById("answe").value=parseFloat(p1)+parseFloat(p2);
+     }
+     function subtr(p1,p2) {
+         var p1=document.getElementById("firstno").value;
+         var p2=document.getElementById("secondno").value;
+         document.getElementById("answe").value=p1-p2;
+     }
+    
+    </script>
+
+
+        <form>Enter first no:
+            <input type="text" id="firstno">
+            <br>Enter second no<input type="text" id="secondno"><br><br>
+            Answer<input type="text" id="answe">
+            <br><br><br>
+
+            <input type="button" value="multiply" onclick="mult()">
+            <input type="button" value="divide" onclick="divi()">
+            <input type="button" value="addition" onclick="addi()">
+            <input type="button" value="subtraction" onclick="subtr()">
+        </form>
+        
+    </body>
+</html>
+     

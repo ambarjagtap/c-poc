@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      
+      body{
+        background-color: rgb(248, 248, 20);
+        border: turquoise;
+        box-sizing: content-box;
+        font-family: 'Times New Roman', Times, serif;
+        font-style: italic;
+
+        
+
+        
+      }
+       
+      
+
+    </style>
+    <title>Reverse String Mthd2</title>
+  </head>
+  <body>
+    <h1><center>Reversing a input</center></h1>
+    <script type="text/javascript">
+    function rev() {
+     
+      var str=document.getElementById("text1").value;
+      var strL=str.length;
+      n="";
+      for (let i = strL -1; i>=0; i--) {
+        n+=str[i];
+        document.getElementById("text2").value=n;
+
+
+      }
+        
+      }
+
+    
+    </script>
+
+
+
+
+
+    <form>
+      <br><br><br><br><h3>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspEnter text here</h3>
+      <input type="button" id="b1" value="REVERSE" onclick="rev()">
+      <input type="text" id="text1"><br><br><br>&nbspOUTPUT
+      <input type="text" id="text2" > 
+
+
+    </form>
+  </body>
+</html>
