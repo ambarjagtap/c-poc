@@ -1,0 +1,70 @@
+/* cars class and objects */
+
+#include<iostream>  //include iostream class
+#include<string>    //include string class
+using namespace std;  //using names defined under std library
+
+class cars{     //create class
+    private: 
+
+    //data members
+    string company_name;   //creating string object 
+    string model_number;   //creating string object
+    string fuel_type;      //creating string object
+    float mileage;         //creating float object
+    double price;         // creating double object
+
+    public:
+
+    //member functions
+    //these member functions only can access data members which are private
+
+    //function to store data from main function
+    void setData(string cname,string mname,string ftype,float m,double p){   //taking arguments
+        company_name=cname;  //giving data member(which is private) its value
+        model_number=mname;   //giving data member(which is private) its value
+        fuel_type=ftype;     //giving data member(which is private) its value
+        mileage=m;          //giving data member(which is private) its value
+        price=p;          //giving data member(which is private) its value
+    }
+    /*Data members are private and can only be accessed by public member functions*/
+
+    //function to display data
+    void displayData(){
+        cout<<"Car properties :"<<endl;
+        cout<<"Car company name : "<<company_name<<endl;
+        cout<<"Car model name :"<<model_number<<endl;
+        cout<<"Car fuel type :"<<fuel_type<<endl;
+        cout<<"Car mileage :"<<mileage<<endl;
+        cout<<"Car price :"<<price<<endl;
+    }
+}; //class ends
+
+
+int main(){
+    cars car01;   //class/datatype object;
+    
+    string cname,mname,ftype;  //string companyname,modelname,fueltype;
+    float m;   // float mileage;
+    double p;  // double price;
+
+    cout<<"Enter company name :"<<endl;
+    cin>>cname;
+
+    cout<<"Enter model name of "<<cname<<":"<<endl;
+    cin>>mname;
+
+    cout<<"Enter fuel type :"<<endl;
+    cin>>ftype;
+
+    cout<<"Enter mileage :"<<endl;
+    cin>>m;
+
+    cout<<"Enter price :"<<endl;
+    cin>>p;
+
+    car01.setData(cname,mname,ftype,m,p);  //calling function and passing arguments
+    car01.displayData();
+
+    return 0;
+}
