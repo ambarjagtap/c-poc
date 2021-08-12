@@ -1,0 +1,30 @@
+//program to print all premutations
+
+#include<bits/stdc++.h>
+using namespace std;
+
+void permute(string str,int l,int r){
+     
+     //base condition
+     if(l==r)cout<<str<<endl;   //print the last node of tree as a permutation
+     else {
+         for(int i=l;i<str.length();i++){
+             swap(str[l],str[i]);  //swap
+             
+             permute(str,l+1,r);  //recursion
+             
+             swap(str[l],str[i]);  //backtracking to undo swapping
+         }
+     }
+    
+
+}
+
+int main(){
+    string str; getline(cin,str);   //input string
+    
+    permute(str,0,str.length()-1);   //call function
+    
+    
+    return 0;
+}
