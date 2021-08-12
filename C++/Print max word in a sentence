@@ -1,0 +1,27 @@
+//program to print the maximum word in a string
+
+#include<bits/stdc++.h>
+using namespace std;
+
+//function to return max word
+string print_max_word(string str){  
+    string max;  //to hold max word
+    string temp; //insert characters
+    
+    for(int i=0;i<str.length();i++){   //iterate all characters of string
+        if(temp.length()>max.length())max=temp; //assign max
+        
+        if(str[i] != ' ')temp+=str[i]; //if character
+        else temp=""; 
+    }
+    
+    return max;
+}
+
+int main(){
+    string str; getline(cin,str);
+    
+    cout<<print_max_word(str);
+    
+    return 0;
+}
