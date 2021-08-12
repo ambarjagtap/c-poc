@@ -1,0 +1,21 @@
+// program to print all permutations of a given string using STL libraby function
+
+
+#include<iostream>
+#include<string>
+#include<algorithm>
+using namespace std;
+
+int main(){
+  string str;  getline(cin,str);    //input the string 
+  
+  sort(str.begin(),str.end());    //arrange lexiographically
+  
+ 
+  
+  while(next_permutation(str.begin(),str.end())){
+    cout<<str<<endl;
+   }
+  
+  return 0;
+}
