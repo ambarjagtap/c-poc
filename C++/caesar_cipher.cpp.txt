@@ -1,0 +1,32 @@
+//caesar cipher
+#include<iostream>
+#include<string>
+#include<cstring>
+#include<cmath>
+using namespace std;
+
+void cipher(char ch[],int key){
+    if(key<0||key>25){
+        cout<<"Wrong input";
+    }
+    else{
+        for(int i=0;i<strlen(ch);i++){
+            if(islower(ch[i])){
+                ch[i]=(ch[i]-97+key)%26+97;
+            }
+            if(isupper(ch[i])){
+                ch[i]=(ch[i]-65+key)%26+65;
+            }
+        }
+    
+    }
+}
+
+int main(){
+    char ch[100]; cin>>ch;  int key; cin>>key;
+    
+    cipher(ch,key);
+    
+    cout<<ch;
+    return 0;
+}
