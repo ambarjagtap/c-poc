@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> even/odd numbers between two numbers</title>
+    </head>
+    <body>
+       
+        <script type="text/javascript">
+        
+            function func_even(){
+                var m=document.getElementById("fnum").value;
+                var n=document.getElementById("snum").value;
+                for ( m=m;m<=n;m++){
+                    var r=m%2;
+                    if (r==0) {
+                        document.writeln(m);
+                        
+                    } 
+                    
+                 }       
+               }     
+
+               function func_odd(){
+                   var m=document.getElementById("fnum").value;
+                   var n=document.getElementById("snum").value;
+                   for (m=m;m<=n;m++){
+                       var r=m%2;
+                       if (r!=0){
+                           document.writeln(m);
+                       }
+                   }
+               }
+       
+            </script>
+
+
+
+        
+        <center><h1>Print even/odd numbers between any two numbers.</h1></center>
+        <br><br>
+        
+        Enter the first number : &nbsp; &nbsp; &nbsp;
+        <input type="text" id="fnum"><br>
+        
+        Enter the second number : &nbsp;
+        <input type="text" id="snum"><br><br><br>
+        
+        <button id="even" onclick="func_even()"> &nbsp; &nbsp; &nbsp;EVEN &nbsp; &nbsp; &nbsp;</button>
+        &nbsp; &nbsp; &nbsp; &nbsp;
+        
+        <button id="odd" onclick="func_odd()"> &nbsp; &nbsp; &nbsp;ODD&nbsp; &nbsp; &nbsp;</button>
+        <br><br><br>
+   
+    </body>
+</html>
