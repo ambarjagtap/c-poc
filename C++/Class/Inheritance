@@ -1,0 +1,56 @@
+/*C++ program to demonstrate Inheritance
+   Inheritance is the ability of a class to derive properties and characteristics from
+   another class 
+   
+   base_class : from which properties are inherited
+   sub_class : to which properties are inherited
+   
+   * increases reusability
+   * avoids redundancy
+   * avoids complexity
+   
+   * Public mode: If we derive a sub class from a public base class. Then the public member of
+     the base class will become public in the derived class and protected members of the base 
+     class will become protected in derived class.
+   * Protected mode: If we derive a sub class from a Protected base class. Then both public 
+     member and protected members of the base class will become protected in derived class.
+   * Private mode: If we derive a sub class from a Private base class. Then both public member 
+     and protected members of the base class will become Private in derived class
+*/
+
+
+#include<bits/stdc++.h>
+using namespace std; 
+
+
+// Parent class
+class Parent{
+    public:
+    int id_p;
+    
+    private:
+    string name;
+    
+    protected:
+    int PIN;
+};
+
+//base class : access_modifier parent class
+class Child : public Parent{
+    public:
+    int id_c;
+    
+};
+
+
+int main(){
+    
+    Child obj1;
+    
+    obj1.id_c=11;
+    obj1.id_p=20;
+    
+    cout<<"Child is :"<<obj1.id_c<<endl<<"Parent is :"<<obj1.id_p;
+    
+    return 0;
+}
