@@ -1,6 +1,6 @@
 /* Understanding Polymorphism 
 
-    *It is the process of using a function for more than one purpose.
+    *It is the process of using a function/operator for more than one purpose.
 
     *Compile time :
         
