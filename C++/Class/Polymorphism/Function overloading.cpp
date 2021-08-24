@@ -26,7 +26,7 @@ using namespace std;
 class New {
     public:
     
-    //create functions of same but different arguments
+    //create functions of same name but different arguments
     void func(int x){
         cout<<"Value of x is :"<<x<<endl;
     }
