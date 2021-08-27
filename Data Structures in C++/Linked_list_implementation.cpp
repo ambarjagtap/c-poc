@@ -1,7 +1,7 @@
 /* Linked list :
     
     -Linear data structure consisting of nodes linked using pointers.
-    -Stored at non-contiguous loaction.
+    -Stored at non-contiguous location.
     -Dynamic size, ease of insertion/deletion.
     -Traversal access is there.
     -Each node consists of 
