@@ -45,7 +45,7 @@ int main(){
     Node *third=new Node();
     Node *fourth=new Node();
     
-    // accessing elements of pointers
+    // accessing elements of pointers & storing values
     head->data=215;
     head->next=second;
     
