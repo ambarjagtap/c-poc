@@ -36,7 +36,7 @@ void distinct_element(int arr[],int n){
         
     }
     
-    cout<<"Number of distinct elements are : "<<res-1<<endl;
+    cout<<"Number of distinct elements are : "<<res<<endl;
     
     // print array R[]
     print(R,res);
