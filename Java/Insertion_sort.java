@@ -40,7 +40,8 @@ class Insertion_sort{
     
     
     //Method to print array
-    // 'static' method doesn't require any object to invoke it
+    // 'static' method doesn't require any object to invoke it.
+    // Only one copy of this method is available which is shared by all objects.
     static void print_array(int arr[],int n){
         for(int i=0;i<n;i++){
             System.out.println(arr[i]+" ");
