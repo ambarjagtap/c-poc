@@ -1,7 +1,7 @@
 // Program to reverse String in Java : Method 1
 /*
       STEP 1: Input string.
-      STEP 2: Convert string to char[] array.
+      STEP 2: Convert string to char[] array. ( using toCharArray() )
   
 */
 
