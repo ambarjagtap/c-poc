@@ -23,7 +23,7 @@ class Bubble_sort{
         
         //no. of iterations always one less than size
         for(i=0;i<n-1;i++){
-            for(j=0;j<n-1;j++){
+            for(j=0;j<n-1-i;j++){     // '-i' because in each iteration one element gets placed at last place.
                 if(arr[j]>arr[j+1]){
                     int temp=arr[j];
                     arr[j]=arr[j+1];
