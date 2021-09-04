@@ -1,5 +1,9 @@
 /* Java program to check Palindrome or not,
     using "charAt(i)"
+    
+    NOTE : Strings in java are read only. One can only read the elements. To modify the elements of 
+           strings one has to make an array out the string or similar array of bytes.
+    
 */
 
 
