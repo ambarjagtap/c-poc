@@ -1,8 +1,8 @@
-/* Insertion sort 
+/* Selection sort 
     *O(n^2)
 */
 
-// Java program to implement Insertion sort
+// Java program to implement Selection sort
 
 //import utilities
 import java.util.*;
@@ -10,10 +10,10 @@ import java.lang.*;
 import java.io.*;
 
 
-// Creating a class named Insertion_sort
-class Insertion_sort{
+// Creating a class named Selection_sort
+class Selection_sort{
     
-    //Method to do insertion sort
+    //Method to do selection sort
     void sort(int arr[],int n){
         
         //Iterate each element of array
@@ -65,10 +65,10 @@ class Insertion_sort{
             arr[i]=obj.nextInt();
         }
         
-        //Create a object of class Insertion sort dynamically
-        Insertion_sort ob=new Insertion_sort();
+        //Create a object of class Selection sort dynamically
+        Selection_sort ob=new Selection_sort();
         
-        //invoke sort method of object of Insertion_sort class
+        //invoke sort method of object of Selection_sort class
         ob.sort(arr,n);
         
         //invoke print method without object as it is 'static' method
