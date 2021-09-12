@@ -1,0 +1,17 @@
+About 'public static void main (String[] args)'
+
+  - public : Access modifier which means that method/function can be called from anywhere.
+  - static : Can be called without creating an object and only one copy is accessible to all objects.
+  - void : No return type.
+  - main : Program starts from main method only.
+  - (String[] args) : The main method accepts 'String array' as a argument. That argument can be given any name.
+  
+__________________________________________________________________________________________________________________________________________
+
+About 'System.out.println("hello world");'  :
+  - System : A class inside a library 'java.lang' package. 
+  - out : Object of 'printStream' type in System class.
+  - println() : Method associated with 'out' object.
+  
+___________________________________________________________________________________________________________________________________________
+
