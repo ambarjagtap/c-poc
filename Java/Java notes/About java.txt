@@ -1,0 +1,40 @@
+Java language :
+  - High level programming language.
+  - 'Pure' Object oriented programming language.
+  - Platform independent and code is 'Write Once Run Anywhere'.
+  - No pointers, use of 'references'.
+  - No 'operator overloading'.
+  - C++ uses runtime environment of 'OS' while java uses runtime environment of its own which is 'Java runtime environment(JRE)'.
+  - Doesn't allows 'Multiple Inheritance'.
+  - Use of 'garbage collector' to deallocate memory.
+  - Multithreaded : Different parts of programs can be executed simultaneously using threads by in-built libraries.
+  - Architectural indepedent.
+  - Secure : Use of 'bytecode verifier'.
+  - Exception handling : removes runtime errors.
+  - Distributed computing :
+      - Remote method invocation (RMI)
+      - Enterprise Javabeans (EJB) 
+  - Reduces execution time by executing on demand basis 'Just in time (JIT) compiler'.
+  
+_________________________________________________________________________________________________________________________________________
+
+Java code execution :
+  -   [java code]---------compiler------->>>>[platform independent BYTECODE]-----------JVM interpreter------------>>>>[01010101001]
+        [.java]                             [Separate .class for each class]                                           [Machine code] 
+
+_________________________________________________________________________________________________________________________________________
+
+Java editions :
+  - Java SE : for standalone desktop applications.
+  - Java EE : for web-based applications.
+  - Java ME : for electronic applications.
+_________________________________________________________________________________________________________________________________________
+
+Java platform : It is combination of 'hardware' and 'software' environment on which java runs.
+
+  - Java virtual machine (JVM) : Converts Bytecode into machine code.
+  - API : Software components that provides useful capabilities. It is grouped into libraries which contains classes, also called
+          'packages'. API contains useful classes which we can use in our application. It spans from basic objects, to networking 
+          and security, to XML generation, database access, and more.
+          
+_________________________________________________________________________________________________________________________________________
