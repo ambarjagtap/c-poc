@@ -1,0 +1,12 @@
+Packages in java:
+
+  - Packages in java are namespaces where a set of 'related classes and interfaces are organised'.
+  
+  - Often programs in java comprises of thousands of classes and interfaces, to organise these packages
+    are used.
+    
+  - Enormous class libraries are set of packages which are known as 'Application Programming Interface'.
+  
+  - It allows programmer to focus on application rather than on infrastructure needed for the application.
+  
+__________________________________________________________________________________________________________
