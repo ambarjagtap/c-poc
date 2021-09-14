@@ -1,0 +1,2 @@
+1- Convert 'string' which contains value in 'double' to type 'double':
+    - Double num=Double.parseDouble(str);    
