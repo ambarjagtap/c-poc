@@ -1,2 +1,11 @@
-1- Convert 'string' which contains value in 'double' to type 'double':
-    - Double num=Double.parseDouble(str);    
+1- Convert 'string' which contains value in 'double' to type 'double' :
+    - Double num=Double.parseDouble(str); 
+_________________________________________________________________________________________________________
+
+2- Comparing 'String' and 'char' :
+    - String temp="cadv";
+      temp.charAt(0)=='d';  
+      temp.charAt(0)==temp.charAt(2);
+_________________________________________________________________________________________________________
+
+
