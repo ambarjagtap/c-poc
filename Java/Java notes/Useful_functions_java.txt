@@ -1,6 +1,6 @@
 1- Convert 'string' which contains value in 'double' to type 'double' :
     - Double num=Double.parseDouble(str);
-    
+   
 _________________________________________________________________________________________________________
 
 2- Comparing 'String' and 'char' :
@@ -19,4 +19,13 @@ ________________________________________________________________________________
     - arr.length
 _________________________________________________________________________________________________________
     
- 
+5- Functions regarding 'HashMap':
+    - HashMap<Charter,Integer>map=new HashMap<Character,Integer>(size,loadfactor(0.5f);  //create a map
+    - map.put(type,value);  // adding elements 
+    - map.containsKey(key_name);  // finding if key is present 
+    - map.size();   // outputs size of map 
+    - map.remove(key);   // removing an element 
+    - for(Map.Entry<type,type>it:name_of_map.entrySet())     // iterating each element of HashMap
+          System.out.println(it.getKey()+" "+it.getValue());   // NOTE: include java.util.Map;
+          
+          
