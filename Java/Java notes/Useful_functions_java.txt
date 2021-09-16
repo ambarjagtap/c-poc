@@ -10,6 +10,7 @@ ________________________________________________________________________________
       str.length();  // length of string
       str1.equals(str2); // if equal or not
       String res=new String(arrORbytes);  // typecasting from char array to String
+      int num=(int)str.charAt(i); // type cast ASCII to int
 _________________________________________________________________________________________________________
 
 3- Set precision :
