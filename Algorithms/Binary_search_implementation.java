@@ -2,6 +2,9 @@
     Binary Search :
         
         -Time complexity: (O)log(n).
+         Space complexity: (O)1.
+         
+        -Uses 'Divide and conquer' rule. 
         
         -Searching an element in a sorted array by dividing the array into two halves every time, using recursion. 
         
