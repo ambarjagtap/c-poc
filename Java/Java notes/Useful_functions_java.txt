@@ -21,6 +21,7 @@ ________________________________________________________________________________
 
 4- Find length of array: 
     - arr.length
+    - Arrays.binarySearch(int_arr,int_key);   // returns index if found, else '-1'  //java.util.Arrays;
 _________________________________________________________________________________________________________
     
 5- Functions regarding 'HashMap':
