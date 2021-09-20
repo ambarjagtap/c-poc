@@ -11,6 +11,7 @@ ________________________________________________________________________________
       str1.equals(str2); // if equal or not
       String res=new String(arrORbytes);  // typecasting from char array to String
       int num=(int)str.charAt(i); // type cast ASCII to int
+      str.indexOf(char);   // returns index of char on a String 
       
 _________________________________________________________________________________________________________
 
@@ -33,6 +34,11 @@ ________________________________________________________________________________
     - map.remove(key);   // removing an element 
     - for(Map.Entry<type,type>it:name_of_map.entrySet())     // iterating each element of HashMap
           System.out.println(it.getKey()+" "+it.getValue());   // NOTE: include java.util.Map;
+          
+          
+    /*------for iterators----------*/
+    - it.getKey();   // get key associated to the index/iterator 
+    - it.getValue();  // get value associated to the index/iterator
           
 _______________________________________________________________________________________________________________
 
