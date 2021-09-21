@@ -44,8 +44,9 @@ ________________________________________________________________________________
 
 6- Functions regarding 'Math':
     - Math.pow(base,expo);   // return type is double  
-    - Math.abs(num1-num2); 
-    - Math.ceil(num1);   // return type is double        
+    - Math.abs(num1-num2);    // returns absolute value
+    - Math.ceil(num1);   // return type is double  
+    - Math.min(num1,num2);  // returns minimum of num1,num2
 ________________________________________________________________________________________________________________
 
 7- Functions regarding 'char':
@@ -56,4 +57,11 @@ ________________________________________________________________________________
    
 _______________________________________________________________________________________________________________
 
-
+8. ArrayList :
+    - Initialisation :
+        -ArrayList<String> l1=new ArrayList<>();   //initialising ArrayList of String 
+        -Collections.addAll(list_name,array_name);    // adding array to list
+        -list.size();  // returns size of list 
+        
+      
+        
