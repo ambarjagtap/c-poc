@@ -1,0 +1,29 @@
+Difference between 'String' and 'StringBuffer' objects :
+ 
+ - 'String' objects are 'immutable/non-changeable' whereas,
+    'StringBuffer' objects are 'mutable / changeable'.
+    
+ - 'String' objects/variables can 'concat' strings without assigning it to any variable/object, which is eligible for 'garbage collection'.
+    We can't modify the object/var itself.
+    
+ - '==' operator always meant for 'reference/address' comparison of same object itself.
+ 
+ - "str1.equals(str2);" meant for content comparison in String object. Overriden from class.
+   "str1.equals(str2);" meant for reference comparison in StringBuffer object. Not overridden from class.
+   
+   
+ - String str=new String("abc");
+    - Two objects are created, one in Heap memory and other in 'String constant pool (SCP)' for future reusability and without any reference variable. Implicitly reference variable is
+      maintained by JVM in SCP and not available for garbage collection.
+ - In 'String Constant Pool' only one copy of literal is there, and many objects may point to this single copy. Whenever we use new keyword, object is allocated in heap also,and in
+   SCP too. String literals are stored in SCP, whether intialised by variable or not. 
+      
+ - String str="asda";  only one object is created in 'String constant pool (SCP)' area for future reusability. In SCP compiler checks if there is String literal present already
+   or not, if not then only a string is allocated. 
+   
+ - For every String literal "xyz" a new copy is created in SCP area.
+ 
+ - For every String literal, copy is stored in 'String Constant Pool (SCP)'.
+ 
+ - Advantage of 'String Constant Pool (SCP)':
+    - It saves RAM memory.
