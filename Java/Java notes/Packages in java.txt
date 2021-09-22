@@ -9,4 +9,6 @@ Packages in java:
   
   - It allows programmer to focus on application rather than on infrastructure needed for the application.
   
+  - [PACKAGES]---->[SUB-PACKAGES]---->[CLASSES]
+  
 __________________________________________________________________________________________________________
