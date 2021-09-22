@@ -4,28 +4,23 @@
 _________________________________________________________________________________________________________
 
 2- String:
-    - String str=new String("abcde");   // initialising a String 
-      String temp="cadv";
+    - String temp="cadv";
       temp.charAt(0)=='d';  
       temp.charAt(0)==temp.charAt(2);
       str.length();  // length of string
-      str1.equals(str2); // if equal or not, for content comparison
+      str1.equals(str2); // if equal or not
       String res=new String(arrORbytes);  // typecasting from char array to String
       int num=(int)str.charAt(i); // type cast ASCII to int
       str.indexOf(char);   // returns index of char on a String 
-      str1==str2;    // meant for reference comparison
-      
-      
-   ------------------------------------StringBuffer----------------------------------------------
-   - StringBuffer str=new StringBuffer("abcd");   //creating an object of StringBuffer
-   - str.append("xyc");    // adding String at last
-   - '==' and 'str1.equals(str2)' operator and method compares references to same object.
       
       
    ------------------------------------StringBuilder----------------------------------------------
     -StringBuilder new=null;  // empty StringBuidler object
     -StringBuilder res=new StringBuilder(str);   //creating StringBuilder object using String
     -str.append('char');    // adding character to last end 
+    -str.deleteCharAt(index_num);   // deleting character at index num
+    -str.reverse();
+    -str.toString();  // changing to String 
       
 _________________________________________________________________________________________________________
 
@@ -67,6 +62,8 @@ ________________________________________________________________________________
     - char ch=inp.next().charAt(0);   // input character 
     - Character.isLowerCase(ch);   // returns 'true' if char is lower case, else 'false'  
     - Character.isUpperCase(ch);   // returns 'true' if char is upper case, else 'false'
+    - Character.toLowerCase(ch);   // changing char to lower case 
+    - Character.toUpperCase(ch);   // changing char to upper case
     
    
 _______________________________________________________________________________________________________________
@@ -75,7 +72,4 @@ ________________________________________________________________________________
     - Initialisation :
         -ArrayList<String> l1=new ArrayList<>();   //initialising ArrayList of String 
         -Collections.addAll(list_name,array_name);    // adding array to list
-        -list.size();  // returns size of list 
-        
-      
-        
+        -list.size();  // returns size of list
