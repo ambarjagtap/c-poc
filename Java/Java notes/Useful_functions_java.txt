@@ -18,6 +18,9 @@ ________________________________________________________________________________
     -StringBuilder new=null;  // empty StringBuidler object
     -StringBuilder res=new StringBuilder(str);   //creating StringBuilder object using String
     -str.append('char');    // adding character to last end 
+    -str.deleteCharAt(index_num);   // deleting character at index num
+    -str.reverse();
+    -str.toString();  // changing to String 
       
 _________________________________________________________________________________________________________
 
@@ -59,6 +62,8 @@ ________________________________________________________________________________
     - char ch=inp.next().charAt(0);   // input character 
     - Character.isLowerCase(ch);   // returns 'true' if char is lower case, else 'false'  
     - Character.isUpperCase(ch);   // returns 'true' if char is upper case, else 'false'
+    - Character.toLowerCase(ch);   // changing char to lower case 
+    - Character.toUpperCase(ch);   // changing char to upper case
     
    
 _______________________________________________________________________________________________________________
