@@ -26,4 +26,5 @@ Difference between 'String' and 'StringBuffer' objects :
  - For every String literal, copy is stored in 'String Constant Pool (SCP)'.
  
  - Advantage of 'String Constant Pool (SCP)':
-    - It saves RAM memory.
+    - It saves RAM memory by sharing objects.
+    - SCP is applicable for 'String' obj not for 'StringBuffer'
