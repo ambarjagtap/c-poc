@@ -13,18 +13,38 @@ Difference between 'String' and 'StringBuffer' objects :
    
    
  - String str=new String("abc");
-    - Two objects are created, one in Heap memory and other in 'String constant pool (SCP)' for future reusability and without any reference variable. Implicitly reference variable is
-      maintained by JVM in SCP and not available for garbage collection.
- - In 'String Constant Pool' only one copy of literal is there, and many objects may point to this single copy. Whenever we use new keyword, object is allocated in heap also,and in
-   SCP too. String literals are stored in SCP, whether intialised by variable or not. 
+    - Two objects are created, one in Heap memory and other in 'String constant pool (SCP)' for future reusability and without any reference variable. 
+      Implicitly referenevariable is maintained by JVM in SCP and not available for garbage collection.
+    - In 'String Constant Pool' only one copy of literal is there, and many objects may point to this single copy. 
+      Whenever we use new keyword, object is allocated in heap also,and in SCP too. String literals are stored in SCP, whether intialised by variable or not. 
       
  - String str="asda";  only one object is created in 'String constant pool (SCP)' area for future reusability. In SCP compiler checks if there is String literal present already
    or not, if not then only a string is allocated. 
    
  - For every String literal "xyz" a new copy is created in SCP area.
  
+ - SCP concept is applicable to String objects only. Because String object is most used object in java. Whereas StringBuffer objects have unique copies for each objects.
+
+ - In wrapper class, all objects are immutable: Byte, short, int, float, double, boolean, character
+
  - For every String literal, copy is stored in 'String Constant Pool (SCP)'.
  
  - Advantage of 'String Constant Pool (SCP)':
-    - It saves RAM memory by sharing objects.
-    - SCP is applicable for 'String' obj not for 'StringBuffer'
+    - It saves RAM memory by sharing objects,  by creating only one object in SCP and creating references for different objects. That's why String objects are immutable because
+      mulitple objects are pointing to that String and any change is very costly.
+    - SCP is applicable for 'String' obj not for 'StringBuffer'.
+ 
+ - Important constructors of String class object :
+    - String str=new String();   //empty String
+    - String str=new String("vds");    // for new operator a string object is created in heap area
+    - String str=new String(StringBuffer obj);  
+    - String str=new String(StringBuilder obj);
+    - String str=new String(char arr[]);   // character array to String
+    - String str=new String(arr);
+    - string str=new String(byte_array);    // byte: -128 to 127
+    
+ - Important methods of String class :
+    - str=str.concat("cdaa");
+    - str.equalsIgnoreCase("durga");
+    - str.isEmpty();   //returns true or false
+    - arr.length [is applicable for array] [.length is a variable]
