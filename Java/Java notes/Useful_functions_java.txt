@@ -13,6 +13,8 @@ ________________________________________________________________________________
       String res=new String(arrORbytes);  // typecasting from char array to String
       int num=(int)str.charAt(i); // type cast ASCII to int
       str.indexOf(char);   // returns index of char on a String 
+      str.concat("bjbjh");   // appending string literal
+      str.toUpperCase();  // changing all chars to upper case
       
       
    ------------------------------------StringBuilder----------------------------------------------
