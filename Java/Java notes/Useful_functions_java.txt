@@ -5,25 +5,25 @@ ________________________________________________________________________________
 
 2- String:
     - String temp="cadv";
-      temp.charAt(0)=='d';  
-      temp.charAt(0)==temp.charAt(2);
-      str.length();  // length of string
-      char arr[]=str.toCharArray();   // creating array of char from String
-      str1.equals(str2); // if equal or not
-      String res=new String(arrORbytes);  // typecasting from char array to String
-      int num=(int)str.charAt(i); // type cast ASCII to int
-      str.indexOf(char);   // returns index of char on a String 
-      str.concat("bjbjh");   // appending string literal
-      str.toUpperCase();  // changing all chars to upper case
+    - temp.charAt(0)=='d';  
+    - temp.charAt(0)==temp.charAt(2);
+    - str.length();  // length of string
+    - char arr[]=str.toCharArray();   // creating array of char from String
+    - str1.equals(str2); // if equal or not
+    - String res=new String(arrORbytes);  // typecasting from char array to String
+    - int num=(int)str.charAt(i); // type cast ASCII to int
+    - str.indexOf(char);   // returns index of char on a String 
+    - str.concat("bjbjh");   // appending string literal
+    - str.toUpperCase();  // changing all chars to upper case
       
       
    ------------------------------------StringBuilder----------------------------------------------
-    -StringBuilder new=null;  // empty StringBuidler object
-    -StringBuilder res=new StringBuilder(str);   //creating StringBuilder object using String
-    -str.append('char');    // adding character to last end 
-    -str.deleteCharAt(index_num);   // deleting character at index num
-    -str.reverse();
-    -str.toString();  // changing to String 
+    - StringBuilder new=null;  // empty StringBuidler object
+    - StringBuilder res=new StringBuilder(str);   //creating StringBuilder object using String
+    - str.append('char');    // adding character to last end 
+    - str.deleteCharAt(index_num);   // deleting character at index num
+    - str.reverse();
+    - str.toString();  // changing to String 
       
 _________________________________________________________________________________________________________
 
@@ -32,10 +32,11 @@ ________________________________________________________________________________
     
 _________________________________________________________________________________________________________
 
-4- Find length of array: 
+4- Array: 
     - arr.length
     - Arrays.binarySearch(int_arr,int_key);   // returns index if found, else '-1'  //java.util.Arrays;
     - for(int i:arr)System.out.println(arr[i]);   // printing array using iterator
+    - int mar[][]=new int[n][n];    //declaring matrix/2-D using array 
 _________________________________________________________________________________________________________
     
 5- Functions regarding 'HashMap':
@@ -72,8 +73,11 @@ ________________________________________________________________________________
    
 _______________________________________________________________________________________________________________
 
-8. ArrayList :
-    - Initialisation :
-        -ArrayList<String> l1=new ArrayList<>();   //initialising ArrayList of String 
-        -Collections.addAll(list_name,array_name);    // adding array to list
-        -list.size();  // returns size of list
+8. ArrayList : (import java.util.ArrayList;)
+    
+        - ArrayList<String>list_name=new ArrayList<>();   //initialising ArrayList of String
+          ArrayList<Integer>list_name=new ArrayList<Integer>(n);  // declaring ArrayList of size 'n'
+        - Collections.addAll(list_name,array_name);    // adding array to list
+        - list_name.add(element);  // appending elements to List
+        - list_name.size();  // returns size of list
+        - list_name.get(index);  // accessing elements from list
