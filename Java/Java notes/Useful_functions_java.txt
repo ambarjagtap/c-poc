@@ -15,6 +15,7 @@ ________________________________________________________________________________
     - str.indexOf(char);   // returns index of char on a String 
     - str.concat("bjbjh");   // appending string literal
     - str.toUpperCase();  // changing all chars to upper case
+    - str.substring(start_index,end_index);   //returns substring
       
       
    ------------------------------------StringBuilder----------------------------------------------
