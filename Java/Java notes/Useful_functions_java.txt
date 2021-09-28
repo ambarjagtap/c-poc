@@ -16,6 +16,7 @@ ________________________________________________________________________________
     - str.concat("bjbjh");   // appending string literal
     - str.toUpperCase();  // changing all chars to upper case
     - str.substring(start_index,end_index);   //returns substring
+    - str.split("char,symbol");      //returns an array of string separated by "char"
       
       
    ------------------------------------StringBuilder----------------------------------------------
