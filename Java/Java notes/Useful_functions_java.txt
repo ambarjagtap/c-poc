@@ -83,3 +83,8 @@ ________________________________________________________________________________
         - list_name.add(element);  // appending elements to List
         - list_name.size();  // returns size of list
         - list_name.get(index);  // accessing elements from list
+        
+__________________________________________________________________________________________________________________
+
+9. Collections class :
+        - Collections.sort(ArrayList_name);   //sorts by default in increasing order  
