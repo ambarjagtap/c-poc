@@ -5,7 +5,8 @@ ________________________________________________________________________________
 
 2- String:
     - String temp="cadv";
-    - temp.charAt(0)=='d';  
+    - temp.charAt(0)=='d';
+    - str+="abcd";   //appending String to String
     - temp.charAt(0)==temp.charAt(2);
     - str.length();  // length of string
     - char arr[]=str.toCharArray();   // creating array of char from String
