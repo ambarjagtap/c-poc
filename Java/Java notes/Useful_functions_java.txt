@@ -17,7 +17,7 @@ ________________________________________________________________________________
     - str.concat("bjbjh");   // appending string literal
     - str.toUpperCase();  // changing all chars to upper case
     - str.substring(start_index,end_index);   //returns substring
-    - str.split("char,symbol");      //returns an array of string separated by "char"
+    - String arr[]=str.split('char/symbol');      //returns an array of string separated by "char"
       
       
    ------------------------------------StringBuilder----------------------------------------------
@@ -73,6 +73,10 @@ ________________________________________________________________________________
     - Character.isUpperCase(ch);   // returns 'true' if char is upper case, else 'false'
     - Character.toLowerCase(ch);   // changing char to lower case 
     - Character.toUpperCase(ch);   // changing char to upper case
+    - char ch='\0';    //intialising null character
+    - String str=Character.toString(char);   //Character to String
+    - String str=String.valueOf(char);     //Character to String 
+    - 
     
    
 _______________________________________________________________________________________________________________
