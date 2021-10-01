@@ -41,6 +41,7 @@ ________________________________________________________________________________
     - Arrays.binarySearch(int_arr,int_key);   // returns index if found, else '-1'  //java.util.Arrays;
     - for(int i:arr)System.out.println(arr[i]);   // printing array using iterator
     - int mar[][]=new int[n][n];    //declaring matrix/2-D using array 
+    - Arrays.sort(arr);   //by default sorting array in increasing order || inside 'java.util.Arrays'
 _________________________________________________________________________________________________________
     
 5- Functions regarding 'HashMap':
