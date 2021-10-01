@@ -1,5 +1,6 @@
-1- Convert 'string' which contains value in 'double' to type 'double' :
-    - Double num=Double.parseDouble(str);
+1- 'String' to other types :
+    - Double num=Double.parseDouble(str);   //String to Double
+    - int num=Integer.parseInt(str);    //String to int
    
 _________________________________________________________________________________________________________
 
@@ -25,7 +26,7 @@ ________________________________________________________________________________
     - StringBuilder res=new StringBuilder(str);   //creating StringBuilder object using String
     - str.append('char');    // adding character to last end 
     - str.deleteCharAt(index_num);   // deleting character at index num
-    - str.reverse();
+    - str.reverse();    //reverseing string
     - str.toString();  // changing to String 
       
 _________________________________________________________________________________________________________
