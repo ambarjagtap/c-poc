@@ -19,7 +19,7 @@ ________________________________________________________________________________
     - str.toUpperCase();  // changing all chars to upper case
     - str.substring(start_index,end_index);   //returns substring
     - String arr[]=str.split('char/symbol');      //returns an array of string separated by "char"
-      
+    - String str=Integer.toString(num);   //type-casting number to String 
       
    ------------------------------------StringBuilder----------------------------------------------
     - StringBuilder new=null;  // empty StringBuidler object
