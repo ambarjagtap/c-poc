@@ -46,7 +46,7 @@ ________________________________________________________________________________
     
 5- Functions regarding 'HashMap':
     - HashMap<Charter,Integer>map=new HashMap<Character,Integer>(size,loadfactor(0.5f);  //create a map
-    - map.put(type,value);  // adding elements 
+    - map.put(key,value);  // adding elements 
     - map.get(key);  // fetch value 
     - map.containsKey(key_name);  // finding if key is present 
     - map.size();   // outputs size of map 
