@@ -96,3 +96,5 @@ ________________________________________________________________________________
 
 9. Collections class :
         - Collections.sort(ArrayList_name);   //sorts by default in increasing order  
+        - Collections.addAll(list_name,array_name);  //adding array elements to ArrayList
+       
