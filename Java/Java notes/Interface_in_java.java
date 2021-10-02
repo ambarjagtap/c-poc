@@ -2,8 +2,10 @@
   Interface :
     - In common language interface can be described as a link between an object and outside world.
       Eg. Object in a class interact with other objects through methods that they expose.
-    - In java, interface is 'group of related methods, but with empty bodies' and 'no impletation'.
-    - Its like a design template of 'related methods' which we can include in our program. 
+    - In java, interface is 'group of related methods, but with empty bodies' and 'no implementation'.
+    - Its like a design template of 'related methods' which we can include or 'implement' in our program. 
+    - If a class implements an 'interface', it can define the methods of the interface.
+    - A class can 'extend'/say inherit only one other class, but it can implement any number number of interfaces.  
 */
 
 // A simple java program to demostrate 'interfaces' :
