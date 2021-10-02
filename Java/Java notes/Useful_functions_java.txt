@@ -37,7 +37,7 @@ ________________________________________________________________________________
 _________________________________________________________________________________________________________
 
 4- Array: 
-    - arr.length
+    - arr.length   //length is not a member function, but instead a data member of class Array
     - Arrays.binarySearch(int_arr,int_key);   // returns index if found, else '-1'  //java.util.Arrays;
     - for(int i:arr)System.out.println(arr[i]);   // printing array using iterator
     - int mar[][]=new int[n][n];    //declaring matrix/2-D using array 
