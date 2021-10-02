@@ -15,6 +15,7 @@ Java language :
       - Remote method invocation (RMI)
       - Enterprise Javabeans (EJB) 
   - Reduces execution time by executing on demand basis 'Just in time (JIT) compiler'.
+  - Each variable in Java holds reference to the tied object type. Objects are floating in heap section of memory.
   
 _________________________________________________________________________________________________________________________________________
 
