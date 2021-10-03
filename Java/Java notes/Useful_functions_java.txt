@@ -102,5 +102,5 @@ ________________________________________________________________________________
 
 10. Scanner class functions :
     - Scanner inp=new Scanner(System.in);
-        inp.hasNextInt();    //returns 'true' if there is a int in input, else returns 'false'.
-   
+        inp.hasNextInt();        //returns 'true' if there is a int in input, else returns 'false'.
+        inp.hasNextLine();       //returns 'true' if there is a nextLine in input, else returns 'false'.
