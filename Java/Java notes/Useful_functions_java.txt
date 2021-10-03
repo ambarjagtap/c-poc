@@ -18,7 +18,7 @@ ________________________________________________________________________________
     - str.concat("bjbjh");   // appending string literal
     - str.toUpperCase();  // changing all chars to upper case
     - str.substring(start_index,end_index);   //returns substring
-    - String arr[]=str.split('char/symbol');      //returns an array of string separated by "char"
+    - String arr[]=str.split("char/symbol");      //returns an array of string separated by "char"
     - String str=Integer.toString(num);   //type-casting number to String 
       
    ------------------------------------StringBuilder----------------------------------------------
@@ -97,4 +97,10 @@ ________________________________________________________________________________
 9. Collections class :
         - Collections.sort(ArrayList_name);   //sorts by default in increasing order  
         - Collections.addAll(list_name,array_name);  //adding array elements to ArrayList
-       
+            
+___________________________________________________________________________________________________________________
+
+10. Scanner class functions :
+    - Scanner inp=new Scanner(System.in);
+        inp.hasNextInt();    //returns 'true' if there is a int in input, else returns 'false'.
+   
