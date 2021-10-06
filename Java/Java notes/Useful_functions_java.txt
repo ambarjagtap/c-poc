@@ -81,7 +81,7 @@ ________________________________________________________________________________
     - 
     
    
-_______________________________________________________________________________________________________________
+________________________________________________________________________________________________________________________________________________
 
 8. ArrayList : (import java.util.ArrayList;)
     
@@ -91,8 +91,9 @@ ________________________________________________________________________________
         - list_name.add(element);  // appending elements to List
         - list_name.size();  // returns size of list
         - list_name.get(index);  // accessing elements from list
-        
-__________________________________________________________________________________________________________________
+        - list_name.set(index,val);   //declaring a new value to an index
+        - ArrayList<Integer>ls=new ArrayList<Integer>(Arrays.asList(0,1,2,3));    //initialising an ArrayList  //inside java.util.Arrays;        
+__________________________________________________________________________________________________________________________________________________
 
 9. Collections class :
         - Collections.sort(ArrayList_name);   //sorts by default in increasing order  
