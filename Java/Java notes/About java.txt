@@ -17,19 +17,19 @@ Java language :
   - Reduces execution time by executing on demand basis 'Just in time (JIT) compiler'.
   - Each variable in Java holds reference to the tied object type. Objects are floating in heap section of memory.
   
-_________________________________________________________________________________________________________________________________________
+___________________________________________________________________________________________________________________________________________________________________________
 
 Java code execution :
   -   [java code]---------compiler------->>>>[platform independent BYTECODE]-----------JVM interpreter------------>>>>[01010101001]
         [.java]                             [Separate .class for each class]                                           [Machine code] 
 
-_________________________________________________________________________________________________________________________________________
+__________________________________________________________________________________________________________________________________________________________________________
 
 Java editions :
-  - Java SE : for standalone desktop applications.
-  - Java EE : for web-based applications.
-  - Java ME : for electronic applications.
-_________________________________________________________________________________________________________________________________________
+  - Java SE / J2SE : for standalone desktop applications. Core Java is part of Java SE -> Uses 1-Tier architecture. 
+  - Java EE / J2EE : for web-based applications. Advanced Java is part of Jave EE -> Uses 2-Tier architecture -> JDBC, web servlets, JSP, etc. 
+  - Java ME : for electronic applications. 
+__________________________________________________________________________________________________________________________________________________________________________
 
 Java platform : It is combination of 'hardware' and 'software' environment on which java runs.
 
@@ -38,10 +38,20 @@ Java platform : It is combination of 'hardware' and 'software' environment on wh
           'packages'. API contains useful classes which we can use in our application. It spans from basic objects, to networking 
           and security, to XML generation, database access, and more.
           
-_________________________________________________________________________________________________________________________________________
+________________________________________________________________________________________________________________________________________________________________________
 
 Java components:
   - JDK ~~~~> JRE ~~~~> JVM 
   
-_________________________________________________________________________________________________________________________________________
+___________________________________________________________________________________________________________________________________________________________________________
 
+By default Java uses references for passing arguments to a function. References (another name for variables) always points to the address of the objects.
+
+___________________________________________________________________________________________________________________________________________________________________________
+
+Package : 
+   - Group of similar types of classes and interfaces.
+   - Two types : 
+        - Built-in
+        - User defined
+   - Packages contain sub-packages. Eg. 
