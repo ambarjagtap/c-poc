@@ -54,4 +54,4 @@ Package :
    - Two types : 
         - Built-in
         - User defined
-   - Packages contain sub-packages. Eg. 
+   - Packages contain sub-packages. Eg. java.util.ArrayList;   //here util is sub package , and 'ArrayList' is a class.
