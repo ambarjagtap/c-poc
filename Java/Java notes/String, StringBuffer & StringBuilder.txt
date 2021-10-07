@@ -6,7 +6,7 @@ Difference between 'String' and 'StringBuffer' objects :
  - 'String' objects/variables can 'concat' strings without assigning it to any variable/object, which is eligible for 'garbage collection'.
     We can't modify the object/var itself.
     
- - '==' operator always meant for 'reference/address' comparison of same object itself.
+ - '==' operator always meant for 'reference/address' comparison, whether the objects are referring/pointing to the same address or not. 
  
  - "str1.equals(str2);" meant for content comparison in String object. Overriden from class.
    "str1.equals(str2);" meant for reference comparison in StringBuffer object. Not overridden from class.
@@ -22,6 +22,8 @@ Difference between 'String' and 'StringBuffer' objects :
    or not, if not then only a string is allocated. 
    
  - For every String literal "xyz" a new copy is created in SCP area.
+ 
+ - 'new' operator is used to allocate Strings in the heap area during runtime. String constants or String literals are allocated in SCP area.
  
  - SCP concept is applicable to String objects only. Because String object is most used object in java. Whereas StringBuffer objects have unique copies for each objects.
 
@@ -44,7 +46,9 @@ Difference between 'String' and 'StringBuffer' objects :
     - string str=new String(byte_array);    // byte: -128 to 127
     
  - Important methods of String class :
-    - str=str.concat("cdaa");
-    - str.equalsIgnoreCase("durga");
+    - str=str.concat("cdaa");     //for concatenation
+    - str+="abcd";   //also for concatenation
+    - str.equalsIgnoreCase("durga");  //compares two strings while ignoring case of letters, returns a boolean 
     - str.isEmpty();   //returns true or false
     - arr.length [is applicable for array] [.length is a variable]
+    - str=str.replace('old_char','new_char');
