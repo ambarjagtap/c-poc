@@ -69,3 +69,15 @@ Difference between 'String' and 'StringBuffer' objects :
     - str=str.toUpperCase();     // String to upper case 
     - str=str.trim();     //removes blank spaces 'before' & 'after' the String, not in between
     
+ 
+ - StringBuffer can't be made immutable because the internal methods are implemented for purpose of immutability. 
+
+ - Immutability and final keyword :
+    - By declaring final a StringBuffer object can't become immutable.
+    - Immutability is for objects, whereas final is for variable.
+    - By assigning a variable 'final' keyword, we cannot refer the same variable to any other object.
+    
+    
+ - Anychange/operation on String objects must be refered/stored to/inside a variable. If not done so, current variable still points to old object and the operation done at 
+   runtime is eligible for garbage collection. 
+ 
