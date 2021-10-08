@@ -3,6 +3,14 @@ Difference between 'String' and 'StringBuffer' objects :
  - 'String' objects are 'immutable/non-changeable' whereas,
     'StringBuffer' objects are 'mutable / changeable'.
     
+ - Immutability  : It means that String object once created, the contents cannot be manipulated. If one tries to manipulate contents then a new object is created with 
+                   those changes.
+                   
+ - Operations on String during runtime (Eg. str.toLowerCase()) are stored in 'heap area' and now variable points to that object in heap. Note that no object is stored 
+   in 'String Constant Pool' area.
+   
+ - New objects are only created if not objects are present already in heap as well as String Constant Pool area.
+     
  - 'String' objects/variables can 'concat' strings without assigning it to any variable/object, which is eligible for 'garbage collection'.
     We can't modify the object/var itself.
     
@@ -38,7 +46,7 @@ Difference between 'String' and 'StringBuffer' objects :
  
  - Important constructors of String class object :
     - String str=new String();   //empty String
-    - String str=new String("vds");    // for new operator a string object is created in heap area
+    - String str=new String("vds");    // for new operator a string var points to object created in heap area, String literal is stored in SCP
     - String str=new String(StringBuffer obj);  
     - String str=new String(StringBuilder obj);
     - String str=new String(char arr[]);   // character array to String
@@ -48,11 +56,16 @@ Difference between 'String' and 'StringBuffer' objects :
  - Important methods of String class :
     - str=str.concat("cdaa");     //for concatenation
     - str+="abcd";   //also for concatenation
+    - str.equals(str2);   //returns boolean after checking contents of two Strings
     - str.equalsIgnoreCase("durga");  //compares two strings while ignoring case of letters, returns a boolean 
     - str.isEmpty();   //returns true or false
     - arr.length [is applicable for array] [.length is a variable]
     - str=str.replace('old_char','new_char');     //replacing particular char of String with another
     - str=str.substring(index_begin);     //returns substring from begine index to last index
-    - str=str.substring(index_begin,index_last+1);      //returns substring from index_begin to index_last (give argument 'last+1')  
+    - str=str.substring(index_begin,index_last+1);      //returns substring from 'index_begin' to 'index_last' ('last+1' is the argument)  
     - int ind=str.indexOf('char');    //returns index of char inside a String 
-    - int ind=str.lastIndexOf('char');     //returns last index of multiple times occuring chars
+    - int ind=str.lastIndexOf('char');     //returns last index of multiple time occurring chars
+    - str=str.toLowerCase();     //String to lower case
+    - str=str.toUpperCase();     // String to upper case 
+    - str=str.trim();     //removes blank spaces 'before' & 'after' the String, not in between
+    
