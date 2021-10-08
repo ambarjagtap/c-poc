@@ -51,4 +51,8 @@ Difference between 'String' and 'StringBuffer' objects :
     - str.equalsIgnoreCase("durga");  //compares two strings while ignoring case of letters, returns a boolean 
     - str.isEmpty();   //returns true or false
     - arr.length [is applicable for array] [.length is a variable]
-    - str=str.replace('old_char','new_char');
+    - str=str.replace('old_char','new_char');     //replacing particular char of String with another
+    - str=str.substring(index_begin);     //returns substring from begine index to last index
+    - str=str.substring(index_begin,index_last+1);      //returns substring from index_begin to index_last (give argument 'last+1')  
+    - int ind=str.indexOf('char');    //returns index of char inside a String 
+    - int ind=str.lastIndexOf('char');     //returns last index of multiple times occuring chars
