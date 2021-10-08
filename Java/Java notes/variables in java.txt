@@ -2,10 +2,10 @@ Fields are states of objects. eg on/off
 
 Types of variables:
 
-1. Instance variables / non- static fields : objects store their values in non static fields, without 'static' keyword.
+1. Instance variables / non- static fields : objects store their values in non static fields, without 'static' keyword. Defined outside any method or block.
 
 2. class variablse / static fields : Any field/variable declared with static keyword. It tells compiler that only one copy exists of this variables. adding 'final' keyword will 
-    fix the value forever.
+    fix the value forever. Defined inside method or any block.
 
 
 PRIMITIVE DATA TYPES:
