@@ -5,21 +5,29 @@
 _________________________________________________________________________________________________________
 
 2- String:
+    - String str=new String();    // empty String constructor
+    - String str=new String("abcd");   // Constructing String
+    - String str=new String(StringBuilder sb);    // typecasting from StringBuilder to String
+    - String str=new String(StringBuffer sf);    // typecasting from StringBuffer to String 
     - String temp="cadv";
+    - str.isEmpty();    //returns boolean
     - temp.charAt(0)=='d';
-    - str+="abcd";   //appending String to String
+    - str+="abcd";      // appending String to String
     - temp.charAt(0)==temp.charAt(2);
-    - str.length();  // length of string
-    - char arr[]=str.toCharArray();   // creating array of char from String
-    - str1.equals(str2); // if equal or not
-    - String res=new String(arrORbytes);  // typecasting from char array to String
-    - int num=(int)str.charAt(i); // type cast ASCII to int
-    - str.indexOf(char);   // returns index of char on a String 
-    - str.concat("bjbjh");   // appending string literal
-    - str.toUpperCase();  // changing all chars to upper case
-    - str.substring(start_index,end_index);   //returns substring
-    - String arr[]=str.split("char/symbol");      //returns an array of string separated by "char"
-    - String str=Integer.toString(num);   //type-casting number to String 
+    - str.length();     // length of string
+    - char arr[]=str.toCharArray();    // creating array of char from String
+    - str1.equals(str2);    // if equal or not, returns boolean
+    - str.equalsIgnoreCase("ABCD"_or_str2);    //compares two Strings ignoring the Case, returns boolean
+    - String res=new String(arrayORbytes_array);    // typecasting from char array to String
+    - int num=(int)str.charAt(i);    // type cast ASCII to int
+    - str.indexOf(char);     // returns index of char on a String 
+    - str.concat("bjbjh");   //Concatenation of String literal
+    - str+="abcd";         //appending String literal
+    - str.toUpperCase();    // changing all chars to upper case
+    - str.substring(start_index,end_index);    //returns substring
+    - String arr[]=str.split("char/symbol");    //returns an array of string separated by "char"
+    - String str=Integer.toString(num);    //type-casting number to String 
+    - str=str.replace('old_char','new_char');    //replacing a character with new one
       
    ------------------------------------StringBuilder----------------------------------------------
     - StringBuilder new=null;  // empty StringBuidler object
