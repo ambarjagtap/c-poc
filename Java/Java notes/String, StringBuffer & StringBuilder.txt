@@ -79,14 +79,20 @@ Difference between 'String' and 'StringBuffer' objects :
  
  capacity : no of chars Stringbuffer can accomodate. for StringBuffer it is '16'.
  
- StringBuffer sb=new StringBuffer(); //empty StringBuffer
+
  
  If we are trying to add more chars than capacity , a new object is created with more capacity and the elements are copied into it, now the variable is pointing to new object.
  Old object is eligible for garbage collection. new capacity = (current capacity+1)*2;
  
- 
- Specifying capacity while constructing object :   StringBuffer sb=new StringBuffer(1000);
- 
- StringBuffer sb=new StringBuffer(String str);
+  
+ StringBuffer sb=new StringBuffer(1000);      //Specifying capacity while constructing object  
+ StringBuffer sb=new StringBuffer();        //empty StringBuffer  |  capacity= 16 |
+ StringBuffer sb=new StringBuffer("abcd");        //Creating StringBuffer object using String literal |  capacity= lengthOfString + 16 | 
+ StringBuffer sb=new StringBuffer(String str);      //creates an StringBuffer object by using String   
+ int len=sb.length();     //returns an int which is the length of String 
+ char ch=sb.charAt(int_index);     //returns char type which is char at specified index 
+ sb=sb.setCharAt(int_index,'new_char');    //sets a new char at specified index position
+ int c=sb.capacity();    //returns an int which defines the capacity of StringBuffer object
+ sb=sb.append("abcdefg"/String_str/byte_b/int_i/long_l/float_f..);      //appeding new chars | we can give different types of arguments because append method is overloaded
  
  
