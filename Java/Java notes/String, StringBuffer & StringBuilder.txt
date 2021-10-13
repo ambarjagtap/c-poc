@@ -85,8 +85,8 @@ Difference between 'String' and 'StringBuffer' objects :
  Old object is eligible for garbage collection. new capacity = (current capacity+1)*2;
  
   
- StringBuffer sb=new StringBuffer(1000);      //Specifying capacity while constructing object  
- StringBuffer sb=new StringBuffer();        //empty StringBuffer  |  capacity= 16 |
+ StringBuffer sb=new StringBuffer(int_capacity);      //Specifying capacity while constructing object  
+ StringBuffer sb=new StringBuffer();        //empty StringBuffer  |  default capacity= 16 |
  StringBuffer sb=new StringBuffer("abcd");        //Creating StringBuffer object using String literal |  capacity= lengthOfString + 16 | 
  StringBuffer sb=new StringBuffer(String str);      //creates an StringBuffer object by using String   
  int len=sb.length();     //returns an int which is the length of String 
