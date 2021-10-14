@@ -1,5 +1,6 @@
 1- 'String' to other types :
     - Double num=Double.parseDouble(str);   //String to Double
+    - Long num=Long.parseLong(str);      //String to Long 
     - int num=Integer.parseInt(str);    //String to int
    
 _________________________________________________________________________________________________________
