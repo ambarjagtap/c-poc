@@ -27,15 +27,16 @@ ________________________________________________________________________________
     - str.substring(start_index,end_index);    //returns substring
     - String arr[]=str.split("char/symbol");    //returns an array of string separated by "char"
     - String str=Integer.toString(num);    //type-casting number to String 
+      String str=valueOf(num);    //type casting from 'num' to 'String'
     - str=str.replace('old_char','new_char');    //replacing a character with new one
       
    ------------------------------------StringBuilder----------------------------------------------
-    - StringBuilder new=null;  // empty StringBuidler object
-    - StringBuilder res=new StringBuilder(str);   //creating StringBuilder object using String
-    - str.append('char');    // adding character to last end 
-    - str.deleteCharAt(index_num);   // deleting character at index num
-    - str.reverse();    //reverseing string
-    - str.toString();  // changing to String 
+    - StringBuilder sb=null;  // empty StringBuidler object
+    - StringBuilder sb=new StringBuilder(str);   //creating StringBuilder object using String
+    - sb.append('char');    // adding character to last end 
+    - sb.deleteCharAt(index_num);   // deleting character at index num
+    - sb.reverse();    //reversing string
+    - sb.toString();  // changing to String 
       
 _________________________________________________________________________________________________________
 
@@ -53,7 +54,7 @@ ________________________________________________________________________________
     - int arr[]=new int[]{1,2,3,4};   //initialising array of integer
 _________________________________________________________________________________________________________
     
-5- Functions regarding 'HashMap':
+5- Functions regarding 'HashMap':  [import java.util.HashMap;]
     - HashMap<Charter,Integer>map=new HashMap<Character,Integer>(size,loadfactor(0.5f);  //create a map
     - map.put(key,value);  // adding elements 
     - map.get(key);  // fetch value 
