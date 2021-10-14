@@ -11,10 +11,10 @@ ________________________________________________________________________________
     - String str=new String(StringBuilder sb);    // typecasting from StringBuilder to String
     - String str=new String(StringBuffer sf);    // typecasting from StringBuffer to String 
     - String temp="cadv";
-    - str.isEmpty();    //returns boolean
-    - temp.charAt(0)=='d';
-    - str+="abcd";      // appending String to String
-    - temp.charAt(0)==temp.charAt(2);
+    - boolean bool=str.isEmpty();    //returns boolean
+    - boolean bool=temp.charAt(0)=='d';     //compares two chars
+    - str+="abcd";      // appending String literal to String
+    - boolean bool=temp.charAt(0)==temp.charAt(2);   //compares two chars
     - str.length();     // length of string
     - char arr[]=str.toCharArray();    // creating array of char from String
     - str1.equals(str2);    // if equal or not, returns boolean
@@ -25,7 +25,8 @@ ________________________________________________________________________________
     - str.concat("bjbjh");   //Concatenation of String literal
     - str+="abcd";         //appending String literal
     - str.toUpperCase();    // changing all chars to upper case
-    - str.substring(start_index,end_index);    //returns substring
+    - str.substring(start_index,end_index+1);    //returns substring from 'start_index' to 'end_index'
+    - str.substring(start_index);    //returns substring from 'start_index' to 'last_index'      
     - String arr[]=str.split("char/symbol");    //returns an array of string separated by "char"
     - String str=Integer.toString(num);    //type-casting number to String 
       String str=valueOf(num);    //type casting from 'num' to 'String'
@@ -55,7 +56,7 @@ ________________________________________________________________________________
     - int arr[]=new int[]{1,2,3,4};   //initialising array of integer
 _________________________________________________________________________________________________________
     
-5- Functions regarding 'HashMap':  [import java.util.HashMap;]
+5- Functions regarding 'HashMap':  (import java.util.HashMap;)
     - HashMap<Charter,Integer>map=new HashMap<Character,Integer>(size,loadfactor(0.5f);  //create a map
     - map.put(key,value);  // adding elements 
     - map.get(key);  // fetch value 
@@ -95,7 +96,6 @@ ________________________________________________________________________________
 ________________________________________________________________________________________________________________________________________________
 
 8. ArrayList : (import java.util.ArrayList;)
-    
         - ArrayList<String>list_name=new ArrayList<>();   //initialising ArrayList of String
           ArrayList<Integer>list_name=new ArrayList<Integer>(n);  // declaring ArrayList of size 'n'
         - Collections.addAll(list_name,array_name);    // adding array to list
@@ -106,9 +106,10 @@ ________________________________________________________________________________
         - ArrayList<Integer>ls=new ArrayList<Integer>(Arrays.asList(0,1,2,3));    //initialising an ArrayList  //inside java.util.Arrays;        
 __________________________________________________________________________________________________________________________________________________
 
-9. Collections class :
+9. Collections class :  (import java.util.Collections;)
         - Collections.sort(ArrayList_name);   //sorts by default in increasing order  
         - Collections.addAll(list_name,array_name);  //adding array elements to ArrayList
+        - Collections.swap(Array_list_name,int_index,int_index);    //swapping elements of ArrayList
             
 ___________________________________________________________________________________________________________________
 
