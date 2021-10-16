@@ -93,6 +93,7 @@ Difference between 'String' and 'StringBuffer' objects :
  char ch=sb.charAt(int_index);     //returns char type which is char at specified index 
  sb=sb.setCharAt(int_index,'new_char');    //sets a new char at specified index position
  int c=sb.capacity();    //returns an int which defines the capacity of StringBuffer object
- sb=sb.append("abcdefg"/String_str/byte_b/int_i/long_l/float_f..);      //appeding new chars | we can give different types of arguments because append method is overloaded
+ sb=sb.append("abcd"/String_str/byte_b/int_i/long_l/float_f..);      //appeding new chars | we can give different types of arguments because append method is overloaded
+ sb=sb.insert(int_index,String str/"abc"/double/boolean/char);    //inserting String at specified index
  
  
