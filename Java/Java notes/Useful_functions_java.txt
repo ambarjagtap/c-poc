@@ -54,6 +54,8 @@ ________________________________________________________________________________
     - int mar[][]=new int[n][n];    //declaring matrix/2-D using array 
     - Arrays.sort(arr);   //by default sorting array in increasing order || inside 'java.util.Arrays'
     - int arr[]=new int[]{1,2,3,4};   //initialising array of integer
+    
+    
 _________________________________________________________________________________________________________
     
 5- Functions regarding 'HashMap':  (import java.util.HashMap;)
@@ -99,11 +101,16 @@ ________________________________________________________________________________
         - ArrayList<String>list_name=new ArrayList<>();   //initialising ArrayList of String
           ArrayList<Integer>list_name=new ArrayList<Integer>(n);  // declaring ArrayList of size 'n'
         - Collections.addAll(list_name,array_name);    // adding array to list
-        - list_name.add(element);  // appending elements to List
+        - list_name.add(element);  // appending elements to end of List
+        - list_name.add(int_index,element);   //appending elements at specified index
+        - list_name.remove(int_index);  //removes element at specified index
         - list_name.size();  // returns size of list
         - list_name.get(index);  // accessing elements from list
         - list_name.set(index,val);   //declaring a new value to an index
-        - ArrayList<Integer>ls=new ArrayList<Integer>(Arrays.asList(0,1,2,3));    //initialising an ArrayList  //inside java.util.Arrays;        
+        - ArrayList<Integer>ls=new ArrayList<Integer>(Arrays.asList(0,1,2,3));    //initialising an ArrayList  //inside java.util.Arrays;
+        - list_name.clear();    //deleting all elements of ArrayList
+        - boolean bool=list_name.contains(element);   //returns an boolean 
+        - 
 __________________________________________________________________________________________________________________________________________________
 
 9. Collections class :  (import java.util.Collections;)
