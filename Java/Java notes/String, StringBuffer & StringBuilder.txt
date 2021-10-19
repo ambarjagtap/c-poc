@@ -84,7 +84,13 @@ Difference between 'String' and 'StringBuffer' objects :
  If we are trying to add more chars than capacity , a new object is created with more capacity and the elements are copied into it, now the variable is pointing to new object.
  Old object is eligible for garbage collection. new capacity = (current capacity+1)*2;
  
-  
+ 
+ //NOTE : In StringBuffer we don't need to a reference variable for every change in StringBuffer object, because the changes are performed on the same object itself unlike
+          in String object where at every change a new object object is created, so therefore for every change in String object we need to refer it to a variable.
+          In StringBuffer and in StringBuilder the changes made in objects are done on the object itself, but in String class for every change, a new object is created 
+          and we have to refer that object to a variable.
+                      
+ 
  StringBuffer sb=new StringBuffer(int_capacity);      //Specifying capacity while constructing object  
  StringBuffer sb=new StringBuffer();        //empty StringBuffer  |  default capacity= 16 |
  StringBuffer sb=new StringBuffer("abcd");        //Creating StringBuffer object using String literal |  capacity= lengthOfString + 16 | 
@@ -94,6 +100,7 @@ Difference between 'String' and 'StringBuffer' objects :
  sb=sb.setCharAt(int_index,'new_char');    //sets a new char at specified index position
  int c=sb.capacity();    //returns an int which defines the capacity of StringBuffer object
  sb=sb.append("abcd"/String_str/byte_b/int_i/long_l/float_f..);      //appeding new chars | we can give different types of arguments because append method is overloaded
- sb=sb.insert(int_index,String str/"abc"/double/boolean/char);    //inserting String at specified index
+ sb=sb.insert(int_index,String str/"abc"/double/boolean/char);    //inserting String literal at specified index
+ sb=sb.delete(ind_begin,ind_end);    //deletes characters from 'begin' to 'end-1' indexes
  
  
