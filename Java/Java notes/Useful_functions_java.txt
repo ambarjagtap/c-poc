@@ -82,7 +82,7 @@ ________________________________________________________________________________
     
 _________________________________________________________________________________________________________
     
-5- Functions regarding 'HashMap':  (import java.util.HashMap;)
+5- Functions regarding 'HashMap':   [import java.util.HashMap;]
     - HashMap<Charter,Integer>map=new HashMap<Character,Integer>(size,loadfactor(0.5f);  //create a map
     - map.put(key,value);  // adding elements 
     - map.get(key);  // fetch value 
@@ -104,7 +104,7 @@ ________________________________________________________________________________
           
 _______________________________________________________________________________________________________________
 
-6- Functions regarding 'TreeMap'  :
+6- Functions regarding 'TreeMap' :  [import java.util.TreeMap;] 
     - TreeMap<type,type>tm=new TreeMap<type,type>();   //creating a new TreeMap
     - tm.put(HashMap);   //putting HashMap into TreeMap (automatically sorts HashMap according to 'Keys' 
     - for(Map.Entry<type,type>it:tm.entrySet())
