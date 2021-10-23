@@ -104,7 +104,15 @@ ________________________________________________________________________________
           
 _______________________________________________________________________________________________________________
 
-6- Functions regarding 'Math':
+6- Functions regarding 'TreeMap'  :
+    - TreeMap<type,type>tm=new TreeMap<type,type>();   //creating a new TreeMap
+    - tm.put(HashMap);   //putting HashMap into TreeMap (automatically sorts HashMap according to 'Keys' 
+    - for(Map.Entry<type,type>it:tm.entrySet())
+        System.out.print(it.getKey()+" "+it.getValue());
+
+____________________________________________________________________________________________________________________
+
+7- Functions regarding 'Math':
     - Math.pow(base,expo);   // return type is double  
     - Math.abs(num1-num2);    // returns absolute value
     - Math.ceil(num1);   // return type is double  
@@ -112,7 +120,7 @@ ________________________________________________________________________________
     - Math.sqrt(num);    //returns square root of a number
 ________________________________________________________________________________________________________________
 
-7- Functions regarding 'char':
+8- Functions regarding 'char':
     - char ch=inp.next().charAt(0);   // input character 
     - Character.isLowerCase(ch);   // returns 'true' if char is lower case, else 'false'  
     - Character.isUpperCase(ch);   // returns 'true' if char is upper case, else 'false'
@@ -126,7 +134,7 @@ ________________________________________________________________________________
    
 ________________________________________________________________________________________________________________________________________________
 
-8. ArrayList : (import java.util.ArrayList;)
+9. ArrayList : (import java.util.ArrayList;)
         - ArrayList<String>list_name=new ArrayList<>();   //initialising ArrayList of String
           ArrayList<Integer>list_name=new ArrayList<Integer>(n);  // declaring ArrayList of size 'n'
         - Collections.addAll(list_name,array_name);    // adding array to list
