@@ -142,16 +142,13 @@ ________________________________________________________________________________
         - 
         
         /*--------------------Using Collections class------------[import java.util.Collections]-----------------------------*/
-        - int max=Collections.max(list_name);    //returns the max value in ArrayList
-        
-__________________________________________________________________________________________________________________________________________________
+        - int max=Collections.max(list_name);     //returns the max value in ArrayList]
+        - Collections.sort(list_name);    //sorts the ArrayList (By default ascending order)
+        - Collections.sort(list_name,Collections.reverseOrder());    //sorts the ArrayList in descending order
+        - Collections.addAll(list_name,array_name);     //Adding Array elements to ArrayList 
+        - collections.swap(list_name,index,index);    //swapping elements of ArrayList
 
-9. Collections class :  (import java.util.Collections;)
-        - Collections.sort(ArrayList_name);   //sorts by default in increasing order  
-        - Collections.addAll(list_name,array_name);  //adding array elements to ArrayList
-        - Collections.swap(Array_list_name,int_index,int_index);    //swapping elements of ArrayList
-            
-___________________________________________________________________________________________________________________
+_______________________________________________________________________________________________________________________________________________
 
 10. Scanner class functions :
     - Scanner inp=new Scanner(System.in);
