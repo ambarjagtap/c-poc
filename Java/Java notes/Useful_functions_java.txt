@@ -50,17 +50,17 @@ ________________________________________________________________________________
     //NOTE : In StringBuffer we don't need to a reference variable for every change in StringBuffer object, because the changes are performed on the same object itself unlike
              in String object where at every change a new object object is created, so therefore for every change in String object we need to refer it to a variable.
                              
-    - StringBuffer sb=new StringBuffer(int_capacity);      //Specifying capacity while constructing object  
-    - StringBuffer sb=new StringBuffer();        //empty StringBuffer  |  default capacity= 16 |
-    - StringBuffer sb=new StringBuffer("abcd");        //Creating StringBuffer object using String literal |  capacity= lengthOfString + 16 | 
-    - StringBuffer sb=new StringBuffer(String str);      //creates an StringBuffer object by using String   
-    - int len=sb.length();     //returns an int which is the length of String 
-    - char ch=sb.charAt(int_index);     //returns char type which is char at specified index 
-    - sb=sb.setCharAt(int_index,'new_char');    //sets a new char at specified index position
-    - int c=sb.capacity();    //returns an int which defines the capacity of StringBuffer object
-    - sb=sb.append("abcd"/String_str/byte_b/int_i/long_l/float_f..);      //appeding new chars | we can give different types of arguments because append method is overloaded
-    - sb=sb.insert(int_index,String str/"abc"/double/boolean/char);    //inserting String literal at specified index
-    - sb=sb.delete(ind_begin,ind_end);    //deletes characters from 'begin' to 'end-1' indexes
+    - StringBuffer sbf=new StringBuffer(int_capacity);      //Specifying capacity while constructing object  
+    - StringBuffer sbf=new StringBuffer();        //empty StringBuffer  |  default capacity= 16 |
+    - StringBuffer sbf=new StringBuffer("abcd");        //Creating StringBuffer object using String literal |  capacity= lengthOfString + 16 | 
+    - StringBuffer sbf=new StringBuffer(String str);      //creates an StringBuffer object by using String   
+    - int len=sbf.length();     //returns an int which is the length of String 
+    - char ch=sbf.charAt(int_index);     //returns char type which is char at specified index 
+    - sbf=sbf.setCharAt(int_index,'new_char');    //sets a new char at specified index position
+    - int c=sbf.capacity();    //returns an int which defines the capacity of StringBuffer object
+    - sbf=sbf.append("abcd"/String_str/byte_b/int_i/long_l/float_f..);      //appeding new chars | we can give different types of arguments because append method is overloaded
+    - sbf=sbf.insert(int_index,String str/"abc"/double/boolean/char);    //inserting String literal at specified index
+    - sbf=sbf.delete(ind_begin,ind_end);    //deletes characters from 'begin' to 'end-1' indexes
  
  
       
