@@ -45,8 +45,9 @@ Java components:
   
 ___________________________________________________________________________________________________________________________________________________________________________
 
-By default Java uses references for passing arguments to a function. References (another name for variables) always points to the address of the objects.
-
+- By default Java uses references for passing arguments to a function. References (another name for variables) always points to the address of the objects.
+- Generics : Templates (arguments for functions).
+- Exceptions : Unwanted errors during execution of program at run-time.
 ___________________________________________________________________________________________________________________________________________________________________________
 
 Package : 
