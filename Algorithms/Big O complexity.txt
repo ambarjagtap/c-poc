@@ -1,0 +1,11 @@
+- Big-O complexity according to time duration :
+    
+    Fastest to Slowest [Efficient to horrible] : 
+    
+      - O(1) , O(log n) [log to base 2]
+      - O(n)
+      - O(n logn)
+      - O(n2)
+      - O(2n)
+      - O(n!)
+      
