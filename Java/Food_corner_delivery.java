@@ -21,37 +21,41 @@ If any of the input is invalid, the bill amount should be displayed as -1.
 */
 
 
-
+//importing Scanner class 
 import java.util.Scanner;
 
 
+// class to test 
 class Tester{
     
+    //main method 
     public static void main(String[] args){
         
+        // creating a new Scanner obj "inp" 
         Scanner inp=new Scanner(System.in);
         
-        char ch=inp.next().charAt(0);
-        int qnt=inp.nextInt();
-        int dis=inp.nextInt();
+        char ch=inp.next().charAt(0); //taking char input 
+        int qnt=inp.nextInt(); //taking qnt input 
+        int dis=inp.nextInt(); //taking dis input 
         
         
-        if(ch=='V'){
-            if(dis<=3){
-                int amnt=12*qnt;
-                System.out.println(amnt);
+        
+        if(ch=='V'){    // if vegetarian 
+             if(dis<=3){     //case 1: if distance is <= 3
+                int amnt=12*qnt;  
+                System.out.println(amnt);  //output amount 
             }   
-            else if(dis>3 && dis<=6){
-                int amnt=(12*qnt)+(dis-3);
+            else if(dis>3 && dis<=6){   //if dis is between 3 and 6
+                int amnt=(12*qnt)+(dis-3);  //calculate amount 
                 System.out.println(amnt);
             }
-            else{
-                int amnt=(12*qnt)+(3+((dis-6)*2));
+            else{  //dis greater than 6
+                int amnt=(12*qnt)+(3+((dis-6)*2));  
                 System.out.println(amnt);
             }
         }
         
-        else if(ch=='N'){
+        else if(ch=='N'){     // if non-vegetarian
             if(dis<=3){
                 int amnt=15*qnt;
                 System.out.println(amnt);
