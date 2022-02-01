@@ -11,7 +11,7 @@ ________________________________________________________________________________
     - String str=new String(StringBuilder sb);    // typecasting from StringBuilder to String
     - String str=new String(StringBuffer sf);    // typecasting from StringBuffer to String 
     - String temp="cadv";
-    - boolean bool=str.isEmpty();    //returns boolean
+    - boolean bool=str.isEmpty();    //returns boolean if string is empty or contains white spaces only
     - boolean bool=temp.charAt(0)=='d';     //compares two chars
     - str+="abcd";      // appending String literal to String
     - boolean bool=temp.charAt(0)==temp.charAt(2);   //compares two chars
@@ -34,6 +34,15 @@ ________________________________________________________________________________
       String str=valueOf(num);    //type casting from 'num' to 'String'
     - str=str.replace('old_char','new_char');    //replacing a character with new one
     - str=str.trim();     //removes blank spaces 'before' & 'after' the String, not in between
+    - boolean bool=str.startsWith("xyz");      //checks if string starts with specified literal or not 
+    - boolean bool=str.startsWith("xyz",int_ind);   //checks if string literal is present at int_index
+    - boolean bool=str.endsWith("xyz");   //checks if string ends with string literal in parameter 
+    - boolean bool=str.endsWith("xyz",int_ind);   //checks if String ends with literal at int_index 
+    - String res=str.repeat(int_count);   //returns String with repeated String literal appended(count_times) 
+    - String res=str.strip();   //cuts all leading/trailing spaces in a String  
+    - String res=str.stripLeading();    //cuts all leading spaces 
+    - String res=str.stripTrailing();   //cuts all leading spaces 
+    
       
    ------------------------------------StringBuilder----------------------------------------------
     - StringBuilder sb=null;  // empty StringBuidler object
